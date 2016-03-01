@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YellowVC" customModule="no_storyboards" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="q1A-yM-60T" id="7NW-n8-LKp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="q1A-yM-60T">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMj-8F-9H9">
+                    <rect key="frame" x="247" y="168" width="106" height="40"/>
+                    <state key="normal" title="Go To Blue"/>
+                    <connections>
+                        <action selector="loadBlueView:" destination="-1" eventType="touchUpInside" id="O59-IY-HL4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.97189387189999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="LMj-8F-9H9" firstAttribute="top" secondItem="q1A-yM-60T" secondAttribute="top" constant="168" id="BM2-RZ-JWG"/>
+                <constraint firstItem="LMj-8F-9H9" firstAttribute="centerX" secondItem="q1A-yM-60T" secondAttribute="centerX" id="mKx-c5-NNB"/>
+            </constraints>
+            <point key="canvasLocation" x="400" y="415"/>
+        </view>
+    </objects>
+</document>

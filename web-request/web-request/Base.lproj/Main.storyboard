@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="web_request" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfr-Pn-dQr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhC-i5-QW3">
+                                <rect key="frame" x="26" y="558" width="35" height="30"/>
+                                <state key="normal" title="Swift"/>
+                                <connections>
+                                    <action selector="loadSwift:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DV1-R5-cbW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahL-FT-Byi">
+                                <rect key="frame" x="541" y="558" width="39" height="30"/>
+                                <state key="normal" title="Steak"/>
+                                <connections>
+                                    <action selector="loadSteak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPd-iu-4b5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIq-z4-qDX">
+                                <rect key="frame" x="244" y="558" width="113" height="30"/>
+                                <state key="normal" title="Celebrity Gossip"/>
+                                <connections>
+                                    <action selector="loadGossip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4nq-UJ-2jd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mhC-i5-QW3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="11e-6y-Pj5"/>
+                            <constraint firstAttribute="trailing" secondItem="Tfr-Pn-dQr" secondAttribute="trailing" id="4jp-by-enw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qIq-z4-qDX" secondAttribute="bottom" constant="12" id="JBb-6p-mh6"/>
+                            <constraint firstItem="Tfr-Pn-dQr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MsE-gY-av0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tfr-Pn-dQr" secondAttribute="bottom" constant="50" id="RAE-HF-LGd"/>
+                            <constraint firstItem="ahL-FT-Byi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XaI-VX-PwZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mhC-i5-QW3" secondAttribute="bottom" constant="12" id="bAY-MS-sDF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ahL-FT-Byi" secondAttribute="bottom" constant="12" id="eE3-cM-RQL"/>
+                            <constraint firstItem="qIq-z4-qDX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tg7-od-sAO"/>
+                            <constraint firstItem="Tfr-Pn-dQr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="z6a-jz-rxP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="container" destination="Tfr-Pn-dQr" id="7RM-Oo-ZXn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>

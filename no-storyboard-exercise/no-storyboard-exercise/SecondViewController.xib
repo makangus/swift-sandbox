@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="no_storyboard_exercise" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fq-5l-wD0">
+                    <rect key="frame" x="205" y="82" width="190" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="Mnw-ns-2kp"/>
+                        <constraint firstAttribute="height" constant="96" id="oqx-Dl-Wxi"/>
+                    </constraints>
+                    <state key="normal" title="Go To Thrid"/>
+                    <connections>
+                        <action selector="loadThird:" destination="-1" eventType="touchUpInside" id="Qhq-Gh-lEp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLi-SU-gfZ">
+                    <rect key="frame" x="205" y="235" width="190" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="1EU-ri-L3A"/>
+                        <constraint firstAttribute="width" constant="190" id="q8a-86-zgR"/>
+                    </constraints>
+                    <state key="normal" title="Back To First"/>
+                    <connections>
+                        <action selector="loadFirst:" destination="-1" eventType="touchUpInside" id="Yfh-1L-aPu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kLi-SU-gfZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Cv-10-6EN"/>
+                <constraint firstItem="9fq-5l-wD0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="82" id="Ixe-7t-A6o"/>
+                <constraint firstItem="kLi-SU-gfZ" firstAttribute="top" secondItem="9fq-5l-wD0" secondAttribute="bottom" constant="57" id="cCJ-xj-YFe"/>
+                <constraint firstItem="9fq-5l-wD0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yy3-UB-fUv"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

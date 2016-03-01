@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Exercise_Auto_Layout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJK-c8-UD5">
+                                <rect key="frame" x="180" y="20" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Cns-yk-8LS"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="GO0-7t-jZ9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="NzF-hz-2fs"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NzF-hz-2fs"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D02-M8-yRt">
+                                <rect key="frame" x="20" y="452" width="128" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.77420850610000003" blue="0.183026578" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4xH-dk-YIf"/>
+                                    <constraint firstAttribute="width" constant="128" id="HkQ-Hb-Eq8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTX-9S-KYd">
+                                <rect key="frame" x="452" y="452" width="128" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.47697333354567018" blue="0.42538141134917562" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="4ex-Tq-9Qa"/>
+                                    <constraint firstAttribute="height" constant="128" id="Lx4-PH-RhG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="QjX-u6-boD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="128" id="poa-p5-wFK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CJK-c8-UD5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CQT-dw-mPD"/>
+                            <constraint firstItem="xTX-9S-KYd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Hze-vp-KmT"/>
+                            <constraint firstItem="D02-M8-yRt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LSV-it-TKm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CJK-c8-UD5" secondAttribute="trailing" id="Vwr-rD-lm1"/>
+                            <constraint firstItem="CJK-c8-UD5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Yb9-BO-DaX"/>
+                            <constraint firstAttribute="bottom" secondItem="D02-M8-yRt" secondAttribute="bottom" id="c8e-O7-KPh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D02-M8-yRt" secondAttribute="bottom" id="fAR-ah-dBH"/>
+                            <constraint firstItem="D02-M8-yRt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gkM-4l-Cmw"/>
+                            <constraint firstItem="CJK-c8-UD5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="irQ-KA-x3u"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xTX-9S-KYd" secondAttribute="bottom" constant="20" id="lAG-za-4lj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="D02-M8-yRt" secondAttribute="bottom" constant="20" id="pqv-GN-iCn"/>
+                            <constraint firstItem="D02-M8-yRt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wVN-3s-ByS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LSV-it-TKm"/>
+                                <exclude reference="c8e-O7-KPh"/>
+                                <exclude reference="gkM-4l-Cmw"/>
+                                <exclude reference="fAR-ah-dBH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="513"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lut-by-XI9">
+                                <rect key="frame" x="180" y="75" width="240" height="182"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwS-BS-FAC">
+                                        <rect key="frame" x="61" y="0.0" width="118" height="91"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="118" id="AY7-vv-czf"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="54" id="CXB-NG-rY8"/>
+                                            <constraint firstAttribute="width" constant="118" id="LhV-bF-rTR"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="118" id="N8r-0E-aaJ"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="118" id="nyr-Xu-eVY"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="p8Z-JV-58g"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="54" id="paI-Z4-P00"/>
+                                            <constraint firstAttribute="height" constant="54" id="yQC-1i-B4w"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="AY7-vv-czf"/>
+                                                <exclude reference="CXB-NG-rY8"/>
+                                                <exclude reference="N8r-0E-aaJ"/>
+                                                <exclude reference="nyr-Xu-eVY"/>
+                                                <exclude reference="p8Z-JV-58g"/>
+                                                <exclude reference="paI-Z4-P00"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="64" width="120" height="54"/>
+                                            <mask key="constraints">
+                                                <include reference="AY7-vv-czf"/>
+                                                <include reference="CXB-NG-rY8"/>
+                                                <include reference="nyr-Xu-eVY"/>
+                                                <include reference="p8Z-JV-58g"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="N8r-0E-aaJ"/>
+                                                <include reference="paI-Z4-P00"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F0B-sk-dCo"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33B-9Z-AcZ">
+                                        <rect key="frame" x="0.0" y="91" width="240" height="91"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.52941176469999995" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="120" y="46" width="120" height="91"/>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="yVB-BW-syt"/>
+                                    <constraint firstAttribute="height" constant="182" id="yjq-vh-klq"/>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9z-LE-RLb">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="246" width="240" height="128"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lut-by-XI9" secondAttribute="trailing" constant="160" id="5Qs-at-zk3"/>
+                            <constraint firstItem="Lut-by-XI9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="EKw-5x-QqJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lut-by-XI9" secondAttribute="bottom" constant="343" id="VMy-UV-ImL"/>
+                            <constraint firstItem="Lut-by-XI9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="160" id="uln-tN-btN"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="z9z-LE-RLb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="z9z-LE-RLb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="nwS-BS-FAC" id="jyl-fA-v3M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="357"/>
+        </scene>
+    </scenes>
+</document>

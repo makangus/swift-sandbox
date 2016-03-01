@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mvc_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvJ-gz-5lk">
+                                <rect key="frame" x="200" y="91" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="7ug-OT-opp"/>
+                                    <constraint firstAttribute="height" constant="21" id="Bw6-xX-GN9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="dno-zR-XoB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7ug-OT-opp"/>
+                                        <exclude reference="Bw6-xX-GN9"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2854" translatesAutoresizingMaskIntoConstraints="NO" id="uri-W8-KhC" customClass="RoundedImageView" customModule="mvc_test" customModuleProvider="target">
+                                <rect key="frame" x="250" y="212" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2FM-f4-ghZ"/>
+                                    <constraint firstAttribute="width" constant="100" id="hO9-U5-vDc"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyv-50-y73">
+                                <rect key="frame" x="200" y="149" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="SKi-ne-1EZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="XJ0-hD-jyU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nch-U9-b6f">
+                                <rect key="frame" x="257" y="376" width="86" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="9lU-Ud-6JX"/>
+                                    <constraint firstAttribute="height" constant="51" id="zEI-wa-mTe"/>
+                                </constraints>
+                                <state key="normal" title="Rename"/>
+                                <connections>
+                                    <action selector="renameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tx1-OA-UYz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XvJ-gz-5lk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2cH-pi-xVb"/>
+                            <constraint firstItem="pyv-50-y73" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2nG-rQ-uaP"/>
+                            <constraint firstItem="XvJ-gz-5lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="3zQ-6f-WHM"/>
+                            <constraint firstItem="Nch-U9-b6f" firstAttribute="top" secondItem="uri-W8-KhC" secondAttribute="bottom" constant="64" id="MyR-Qp-pYl"/>
+                            <constraint firstItem="uri-W8-KhC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pyr-jA-SEJ"/>
+                            <constraint firstItem="XvJ-gz-5lk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="Ypp-CN-8EX"/>
+                            <constraint firstItem="uri-W8-KhC" firstAttribute="top" secondItem="XvJ-gz-5lk" secondAttribute="bottom" constant="100" id="oM7-dt-hGe"/>
+                            <constraint firstItem="pyv-50-y73" firstAttribute="top" secondItem="XvJ-gz-5lk" secondAttribute="bottom" constant="37" id="odE-zp-Ccy"/>
+                            <constraint firstItem="Nch-U9-b6f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pOl-IT-4a7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fullName" destination="XvJ-gz-5lk" id="Xpm-io-U5e"/>
+                        <outlet property="renameField" destination="pyv-50-y73" id="u06-n5-ypB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="542"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2854" width="244" height="244"/>
+    </resources>
+</document>
